@@ -1,0 +1,17 @@
+<div class="side-projects">
+  <div class="wrapper">
+    <h4>Side Projects</h4>
+    <div class="row between-xs">
+      {% for sideProject in site.data.side-projects %}
+          <div class="side-project col-sm-4 col-xs-12">
+            <a href="{{ sideProject.link }}">
+              <div class="project-card" style="background-color: #{{ sideProject.color }}">
+                <img src="/assets/{{ sideProject.image }}" alt="{{ sideProject.name }}" title="{{ sideProject.name }}" />
+              </div>
+            </a>
+            {{ sideProject.name }}
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

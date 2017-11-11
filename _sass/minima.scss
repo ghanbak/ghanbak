@@ -20,6 +20,9 @@ $cyan: #00ffff !default;
 $magenta: #ff00ff !default;
 $yellow: #ffff00 !default;
 
+$grey-light: #fcfcfc !default;
+$grey: #ebedf3 !default;
+
 $grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark: darken($grey-color, 25%) !default;
@@ -66,4 +69,8 @@ $on-laptop: 800px !default;
 }
 
 // Import partials.
-@import "ghanbak/base", "ghanbak/layout", "ghanbak/syntax-highlighting";
+@import "ghanbak/base",
+  "ghanbak/flexbox-grid",
+  "ghanbak/layout",
+  "ghanbak/syntax-highlighting",
+  "ghanbak/side-projects";

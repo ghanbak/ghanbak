@@ -129,7 +129,7 @@ h3 {
 
 h4 {
   color: $text-color;
-  @include relative-font-size(1.8);
+  @include relative-font-size(1.4);
   line-height: 1.2;
   letter-spacing: 1px;
   margin-bottom: $base-font-size * 0.8;

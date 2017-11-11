@@ -1,0 +1,14 @@
+- name: Metalheads
+  color: 292d30
+  image: the-horns.png
+  link: https://itunes.apple.com/us/app/metalhead-imessage-stickers/id1180280146?mt=8&ref=producthunt
+
+- name: Mallo
+  color: F0F3FF
+  image: mallo.png
+  link: https://itunes.apple.com/us/app/mallo-marshmallow-stickers/id1255191462?mt=8
+
+- name: Emojicast
+  color: 79E3F9
+  image: emojicast.png
+  link: https://mallo.ghanbak.com

@@ -1,23 +1,39 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
+  {% include head.html %}
 
-  <div class="row">
-    <div class="column">
-      <h3>
-        Creating User Adoption for an Invisible App
-      </h3>
-      <p>
-        When I started at Robin, our mobile app did one thing well — automatically book a room when you walk in. The problem was not many people used the app because it did things behind the scenes.
-      </p>
-      <p>
-        <a href="{{ "/robin-mobile" | relative }}">Seeing is believing ›</a>
-      </p>
-    </div>
-    <div class="column">
-      <img src="/assets/home-iphone.png" />
-    </div>
-  </div>
-</div>
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+          <div class="row between-xs">
+            <div class="col-sm-6 col-xs-12">
+              <h3>
+                Creating User Adoption for an Invisible App
+              </h3>
+              <p>
+                When I started at Robin, our mobile app did one thing well — automatically book a room when you walk in. The problem was not many people used the app because it did things behind the scenes.
+              </p>
+              <p>
+                <a href="{{ "/robin-mobile" | relative }}">Seeing is believing ›</a>
+              </p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <img src="/assets/home-iphone.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include side-projects.html %}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
