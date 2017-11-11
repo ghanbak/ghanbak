@@ -1,28 +1,52 @@
 @charset "utf-8";
+@import "bourbon/bourbon";
 
 // Define defaults for each variable.
 
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-size: 15px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$text-color: #495a68 !default;
+$background-color: #fff !default;
+$brand-color: #292d30 !default;
 
-$grey-color:       #828282 !default;
+$blue: #008dfe !default;
+$cyan: #00ffff !default;
+$magenta: #ff00ff !default;
+$yellow: #ffff00 !default;
+
+$grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width: 800px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+
+@include keyframes(link-hover) {
+  0% {
+    text-shadow: -2px 3px 0 $magenta, 4px 1px 0 $cyan, -4px -3px 0 $yellow;
+  }
+  25% {
+    text-shadow: 2px -3px 0 $magenta, -4px -1px 0 $cyan, 4px 3px 0 $yellow;
+  }
+  50% {
+    text-shadow: -5px -6px 0 $magenta, 2px -5px 0 $cyan, 2px -4px 0 $yellow;
+  }
+  75% {
+    text-shadow: 2px 7px 0 $magenta, -4px 3px 0 $cyan, -4px 3px 0 $yellow;
+  }
+  100% {
+    text-shadow: -2px 3px 0 $magenta, 4px 1px 0 $cyan, -4px -3px 0 $yellow;
+  }
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -42,8 +66,4 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+@import "ghanbak/base", "ghanbak/layout", "ghanbak/syntax-highlighting";
