@@ -1,0 +1,26 @@
+<div class="wrapper case-study-data">
+  <div class="row between-xs middle-xs">
+    <div class="col-xs-12">
+      <dl>
+        <dt>
+          <b>Date:</b> {{ include.info.date }}
+        </dt>
+        <dt>
+          <b>Company:</b> {{ include.info.company }}
+        </dt>
+        <dt>
+          <b>Project:</b> {{ include.info.project }}
+        </dt>
+        <dt>
+          <b>Role:</b> {{ include.info.role }}
+        </dt>
+      </dl>
+      <p>
+        <b>Team:</b>
+        {% for member in include.info.team %}
+          {{ member.name}} ({{ member.role }}){% if member != include.info.team.last %},{% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+</div>

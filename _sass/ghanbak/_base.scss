@@ -80,7 +80,8 @@ figcaption {
  * Lists
  */
 ul,
-ol {
+ol,
+dl {
   margin-left: $spacing-unit - 10;
   line-height: 1.66;
   letter-spacing: 1px;
@@ -88,6 +89,10 @@ ol {
   .dark & {
     color: $light-text;
   }
+}
+
+dl {
+  margin-left: 0;
 }
 
 li {
@@ -194,6 +199,11 @@ a {
       text-decoration: underline;
     }
   }
+}
+
+strong,
+b {
+  font-weight: 500;
 }
 
 /**

@@ -1,0 +1,24 @@
+title: Digital Signage for Meeting Rooms
+company: Robin
+date: '2014 - 2015'
+project: Robin Rooms
+role: Lead UX designer
+team:
+  - name: Atticus White
+    role: Lead Engineer
+  - name: Chris Mark
+    role: Android Engineer
+  - name: Zach Dunn
+    role: CPO
+  - name: Emily True
+    role: Product Manager
+  - name: Sam Dunn
+    role: CEO
+
+situation: <b>The Task at Hand</b> — When I joined Robin, we realized that a strong play for increasing user adoption and give sales some fire power was to build a room display app. I needed to design an app that could be used to book rooms at the door and show availability.
+task: <b>Research</b> — I started by looking into the digital signage and booking solutions out there. Most seemed to have highly custom software or little to no functionality other than book and cancel buttons.
+action:
+  - paragraph: <b>Brainstorming</b> — In my conversations with product, we thought it’d be a good idea to provide small customization with a room photo and have a sidebar that showed the upcoming meetings and the current time.
+  - paragraph: <b>Design</b> — While working on my mockups, we realized there were some accessibility issues with my initial pass on the product. Originally, I had two vertical, colored bars on either side of the display. The colors were green, yellow and red — these don’t make for very good accessibility indicators.
+  - paragraph: To improve the accessibility, I included text clues by having Available or the meeting name the largest text on the screen. To help with indicating unavailable states, I made a color overlay for the background images. This effectively brightened the screen and dimmed the background image.
+result: <b>Since then</b>  — Roughly 80% of our customers are running Robin on 7,300 active tablets. We see almost 30,000 events created from our room displays every day, not including events booked in other Robin apps or in their current calendar systems.

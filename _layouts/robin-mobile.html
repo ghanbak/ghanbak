@@ -3,14 +3,57 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="robin-mobile">
 
     {% include header.html %}
 
+    {% assign robinMobile = site.data.robin-mobile %}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-xs-12 last-xs first-sm">
+            <h2>
+              {{ robinMobile.title }}
+            </h2>
+            <h4>{{ robinMobile.company }}</h4>
+            <p>{{ robinMobile.situation }}</p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <img src="/assets/mobile-home.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/mobile-bluetooth.png" />
+            <img src="/assets/mobile-beacon.png" />
+          </div>
+          <div class="col-sm-7 col-sm-offset-1 col-xs-12 last-xs ">
+            <p>{{ robinMobile.task }}</p>
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-7 col-xs-12 last-xs first-sm">
+            <p>{{ robinMobile.action }}</p>
+          </div>
+          <div class="col-sm-5 col-xs-12">
+            <img src="/assets/mobile-v2-home.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-xs-12 last-xs first-sm">
+            {% assign paragraphs = site.data.robin-mobile.result %}
+            {% for paragraph in paragraphs %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+          <div class="col-xs-12">
+            <img src="/assets/mobile-aggregate.png" />
+          </div>
+        </div>
       </div>
+
+      {% include case-study-info.html info = robinMobile %}
+
     </main>
 
     {% include footer.html %}

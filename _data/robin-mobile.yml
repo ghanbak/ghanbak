@@ -1,0 +1,26 @@
+title: Creating User Adoption for an Invisible App
+company: Robin
+date: '2015'
+project: Robin Mobile v2.0
+role: Lead UX designer
+team:
+  - name: Atticus White
+    role: Lead Engineer
+  - name: Chris Mark
+    role: Android Engineer
+  - name: Victor Chen
+    role: iOS Engineer
+  - name: Courtney Guo
+    role: Engineering Intern
+  - name: Zach Dunn
+    role: CPO
+  - name: Emily True
+    role: Product Manager
+
+situation: When I started at Robin in 2014, our mobile app did one thing well — automatically book a room when you walk in. Unfortunately, we had low adoption numbers.
+task: <b>Automagical</b> — We found we weren’t getting user adoption or feedback because our app was invisible. It did it’s job entirely in the background. We sent out surveys to find out what would make our mobile app better for our customers. We got a lot of feedback about being able to search for available rooms.
+action: <b>Materializing the Ethereal</b> — We redesigned our mobile app to have 3 navigation items. Our home screen was a way to see a list of the spaces in your office. We added a search screen that had more advanced search options for booking spaces, and a people tab for finding your coworkers.
+result:
+  - paragraph: <b>Results</b>  — After launching the new version of our mobile app, we saw an uptick in event creation and editing. We also noticed a larger number of space searches. Over the one year lifetime of version two of our mobile app, we noticed two things that indicated increased usage.
+  - paragraph: First, our users started extending meetings more and more through the mobile app. Second, even though our overall number of users stayed relatively the same, the number of space views continued to increase steadily.
+  - paragraph: We learned that people were using the app to search for spaces and book them and that the average meeting length was close to an hour.

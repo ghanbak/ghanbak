@@ -31,8 +31,20 @@
       border: 1px solid $grey;
       border-radius: 24px;
 
-      > * {
-        flex: none;
+      .experience-info {
+        width: 100%;
+
+        img {
+          margin-bottom: 12px;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        strong {
+          display: block;
+        }
       }
     }
   }

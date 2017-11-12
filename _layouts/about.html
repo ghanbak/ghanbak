@@ -60,9 +60,13 @@
           {% for experience in experiences %}
               <div class="job col-sm-4 col-xs-12">
                 <div class="experience-card">
-                  <img src="/assets/{{ experience.coLogo }}.png" height="24px" alt="{{ experience.company }}" title="{{ experience.company }}" />
-                  <p><strong>{{ experience.role }}</strong></p>
-                  <p>{{ experience.dates }}</p>
+                  <div class="experience-info">
+                    <img src="/assets/{{ experience.coLogo }}.png" height="24px" alt="{{ experience.company }}" title="{{ experience.company }}" />
+                    <p>
+                      <strong>{{ experience.role }}</strong>
+                      {{ experience.dates }}
+                    </p>
+                  </div>
                 </div>
               </div>
           {% endfor %}

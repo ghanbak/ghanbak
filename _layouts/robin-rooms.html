@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="robin-rooms">
+
+    {% include header.html %}
+
+    {% assign robinRooms = site.data.robin-rooms %}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-5 col-xs-12">
+            <img src="/assets/ipad-landscape.png" />
+          </div>
+          <div class="col-sm-7 col-xs-12 last-xs">
+            <h2>
+              {{ robinRooms.title }}
+            </h2>
+            <h4>{{ robinRooms.company }}</h4>
+          </div>
+        </div>
+        <div class="row center-xs case-study">
+          <div class="col-sm-9 col-sm-offset-1 col-xs-12">
+            <p>{{ robinRooms.situation }}</p>
+            <p>{{ robinRooms.task }}</p>
+          </div>
+        </div>
+        <div class="row between-xs center-xs case-study">
+          <div class="col-xs-12">
+            <img src="/assets/ipad-screen.png" />
+          </div>
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12 last-xs">
+            <p>{{ robinRooms.action.first.paragraph }}</p>
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-6 col-xs-12">
+            {% assign paragraphs = site.data.robin-rooms.action %}
+            {% for paragraph in paragraphs offset:1 %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+          <div class="col-sm-5 col-sm-offset-1 col-xs-12 first-xs last-sm">
+            <img src="/assets/ipad-portrait.png" />
+          </div>
+        </div>
+        <div class="row between-xs center-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            <p>{{ robinRooms.result }}</p>
+          </div>
+          <div class="col-xs-12 last-xs">
+            <img src="/assets/ipad-aggregate.png" />
+          </div>
+        </div>
+      </div>
+
+      {% include case-study-info.html info = robinRooms %}
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
