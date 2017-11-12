@@ -1,0 +1,51 @@
+image:
+  path: 'ethan.png'
+  title: ethan wearing glasses
+  alt: ethan macdonald
+title: ghanbak
+pronounciation: "|'ɡän,bak|"
+type: noun
+color: '000000'
+
+definitions:
+  - definition: a screen name for Ethan MacDonald
+    example: My screen name on CoD is ghanbak.
+
+  - definition: a weird configuration of Latin letters that when pronounced sound like the English words gone and back
+    example: I wish we could have gone back there, ghanbak.
+
+content:
+  - sent: My real name is Ethan MacDonald, no I’m not related in any way to the fast food franchise. I’m related to Old MacDonald, ya know, the one with the farm. Yep! That’s the one. I have no intentions of running a farm but I may enjoy working on software for farmers and other small town jobs.
+
+  - sent: I believe that design is a powerful tool — one that can be used to improve the world around us. I strive to create meaningful experiences through thoughtful and purposeful design.
+
+  - sent: My dream is to one day work on something for Star Wars, design software for space travel, design skate decks, create at least one cartoon show, and one day plan and build a city from scratch.
+
+hobby-title: 'Things I love:'
+hobbies:
+  - name: Star Wars
+  - name: video games
+  - name: the vastness of outerspace
+  - name: Dungeons and Dragons
+  - name: metalcore and throwing down in the pit
+  - name: EDM
+  - name: Korea
+  - name: bomber jackets
+  - name: the color black
+  - name: pizza
+
+experience:
+  - company: Robin
+    coLogo: robin-logo
+    role: Product designer
+    dates: Nov 2014 - present
+
+  - company: Brunello
+    coLogo: brunello-logo
+    role: Designer / FE Developer
+    dates: Aug 2014 - Nov 2014
+
+  - company: August Ash
+    coLogo: aai-logo
+    role: Designer / FE Developer
+    dates: May 2012 - Aug 2014

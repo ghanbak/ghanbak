@@ -20,6 +20,12 @@ $cyan: #00ffff !default;
 $magenta: #ff00ff !default;
 $yellow: #ffff00 !default;
 
+$light-h1: #ecf0f4 !default;
+$light-h2: #d5e0e8 !default;
+$light-h3: $light-h2 !default;
+$light-h4: #bcd0e0 !default;
+$light-text: #cfdde7 !default;
+
 $grey-light: #fcfcfc !default;
 $grey: #ebedf3 !default;
 
@@ -73,4 +79,5 @@ $on-laptop: 800px !default;
   "ghanbak/flexbox-grid",
   "ghanbak/layout",
   "ghanbak/syntax-highlighting",
+  "ghanbak/about",
   "ghanbak/side-projects";

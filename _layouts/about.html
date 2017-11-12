@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="about-page">
+
+    {% include header.html %}
+
+    {% assign about = site.data.about %}
+    <header class="about-header dark" style="background-color: #{{ about.color }}">
+      <div class="wrapper">
+        <div class="row between-xs middle-xs">
+          <div class="col-xs-12 col-sm-5 last-xs first-sm">
+            <img src="/assets/{{ about.image.path }}" alt="{{ about.image.alt }}" title="{{ about.image.title }}" />
+          </div>
+          <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+            <h1>{{ about.title }}</h1>
+            <h3>{{ about.pronounciation }}</h3>
+            <h4>{{ about.type }}</h4>
+            <p>
+              <ol>
+                {% assign definitions = site.data.about.definitions %}
+                {% for definition in definitions %}
+                  <li>
+                    {{ definition.definition }}
+                  </li>
+                  <p><em>{{ definition.example }}</em></p>
+                {% endfor %}
+              </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="row between-xs">
+          <div class="col-xs-12 col-sm-8">
+            {% assign sentences = site.data.about.content %}
+            {% for sentence in sentences %}
+              <p>{{ sentence.sent }}</p>
+            {% endfor %}
+          </div>
+          <div class="col-xs-12 col-sm-3 col-sm-offset-1 hobbies">
+            <p>{{ about.hobby-title }}</p>
+            <ul>
+              {% assign hobbies = site.data.about.hobbies %}
+              {% for hobby in hobbies %}
+                <li>{{ hobby.name }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper experience">
+        <h4>Experience</h4>
+        <div class="row between-xs">
+          {% assign experiences = site.data.about.experience %}
+          {% for experience in experiences %}
+              <div class="job col-sm-4 col-xs-12">
+                <div class="experience-card">
+                  <img src="/assets/{{ experience.coLogo }}.png" height="24px" alt="{{ experience.company }}" title="{{ experience.company }}" />
+                  <p><strong>{{ experience.role }}</strong></p>
+                  <p>{{ experience.dates }}</p>
+                </div>
+              </div>
+          {% endfor %}
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
