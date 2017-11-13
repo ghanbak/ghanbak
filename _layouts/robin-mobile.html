@@ -22,10 +22,14 @@
             <img src="/assets/mobile-home.png" />
           </div>
         </div>
-        <div class="row between-xs middle-xs case-study">
-          <div class="col-sm-4 col-xs-12 first-sm">
-            <img src="/assets/mobile-bluetooth.png" />
-            <img src="/assets/mobile-beacon.png" />
+        <div class="row between-xs middle-xs bluetooth case-study">
+          <div class="col-sm-4 col-xs-12 first-sm bluetooth-img">
+            <div class="bt-beacon">
+              <img src="/assets/mobile-beacon.png" />
+            </div>
+            <div class="beacon-phone">
+              <img src="/assets/mobile-bluetooth.png" />
+            </div>
           </div>
           <div class="col-sm-7 col-sm-offset-1 col-xs-12 last-xs ">
             <p>{{ robinMobile.task }}</p>
@@ -40,7 +44,7 @@
           </div>
         </div>
         <div class="row between-xs middle-xs case-study">
-          <div class="col-sm-8 col-xs-12 last-xs first-sm">
+          <div class="col-sm-8 col-xs-12 first-xs underlay-100 underlay-no-mobile">
             {% assign paragraphs = site.data.robin-mobile.result %}
             {% for paragraph in paragraphs %}
               <p>{{ paragraph.paragraph }}</p>

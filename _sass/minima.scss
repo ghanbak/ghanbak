@@ -36,7 +36,7 @@ $grey-color-dark: darken($grey-color, 25%) !default;
 // Width of the content area
 $content-width: 800px !default;
 
-$on-palm: 600px !default;
+$on-palm: 48em !default;
 $on-laptop: 800px !default;
 
 @include keyframes(link-hover) {
@@ -80,5 +80,7 @@ $on-laptop: 800px !default;
   "ghanbak/layout",
   "ghanbak/syntax-highlighting",
   "ghanbak/about",
+  "ghanbak/robin-mobile",
   "ghanbak/robin-rooms",
+  "ghanbak/bas-page",
   "ghanbak/side-projects";

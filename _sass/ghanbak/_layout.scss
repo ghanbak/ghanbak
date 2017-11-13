@@ -23,9 +23,15 @@
   }
 
   @include media-query($on-palm) {
+    margin-top: $spacing-unit;
+
     .page-link {
       display: inline-block;
-      padding: 10px;
+      padding: 10px $spacing-unit;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -35,6 +41,86 @@
  */
 .case-study {
   padding: 40px 0;
+}
+
+@include media-query(600px) {
+  .case-study img {
+    padding-bottom: $spacing-unit * 2;
+  }
+}
+
+.underlay {
+  z-index: 0;
+
+  &-10 {
+    margin-bottom: -10px;
+  }
+
+  &-20 {
+    margin-bottom: -20px;
+  }
+
+  &-30 {
+    margin-bottom: -$spacing-unit;
+  }
+
+  &-60 {
+    margin-bottom: -$spacing-unit * 2;
+  }
+
+  &-100 {
+    margin-bottom: -100px;
+  }
+}
+
+.overlay {
+  z-index: 10;
+
+  &-10 {
+    margin-top: -10px;
+  }
+
+  &-20 {
+    margin-top: -20px;
+  }
+
+  &-30 {
+    margin-top: -$spacing-unit;
+  }
+
+  &-60 {
+    margin-top: -$spacing-unit * 2;
+  }
+
+  &-100 {
+    margin-top: -100px;
+  }
+}
+
+@include media-query($on-palm) {
+  [class*="underlay-"],
+  [class^="underlay-"],
+  [class*="overlay-"],
+  [class^="overlay-"] {
+    img {
+      padding-bottom: 0;
+    }
+  }
+
+  [class*="overlay-"],
+  [class^="overlay-"] {
+    margin-top: -$spacing-unit;
+  }
+}
+
+@include media-query(600px) {
+  .overlay-no-mobile {
+    margin-top: 0;
+  }
+
+  .underlay-no-mobile {
+    margin-bottom: 0;
+  }
 }
 
 /**
@@ -111,6 +197,10 @@
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width: calc(100% - (#{$spacing-unit} / 2));
+  }
+
+  .site-footer #logo {
+    margin-bottom: $spacing-unit;
   }
 }
 

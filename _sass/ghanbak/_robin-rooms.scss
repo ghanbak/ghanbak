@@ -4,4 +4,32 @@
       text-align: left;
     }
   }
+
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: $spacing-unit $spacing-unit * 2;
+  }
+
+  @include media-query(600px) {
+    .page-content {
+      overflow: hidden;
+    }
+
+    .card {
+      padding: 0 0.5rem;
+      border-radius: 0;
+      background-color: none;
+    }
+
+    .tablet-group {
+      img {
+        max-width: none;
+        width: 700px;
+        position: relative;
+        left: 50%;
+        @include transform(translateX(-50%));
+      }
+    }
+  }
 }

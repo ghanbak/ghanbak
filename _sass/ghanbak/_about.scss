@@ -56,3 +56,12 @@
     }
   }
 }
+
+@include media-query($on-palm) {
+  .about-header {
+    padding-top: $spacing-unit;
+  }
+  .experience-card {
+    margin-bottom: $spacing-unit;
+  }
+}

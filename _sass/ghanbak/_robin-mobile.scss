@@ -1,0 +1,33 @@
+.robin-mobile {
+  .bluetooth {
+    padding-bottom: 100px;
+  }
+  .bluetooth-img {
+    position: relative;
+  }
+  .beacon-phone {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 390px;
+  }
+
+  @include media-query(600px) {
+    .page-content {
+      overflow: hidden;
+    }
+    .bluetooth {
+      padding-bottom: 40px;
+    }
+    .bluetooth-img {
+      padding-bottom: 100px;
+    }
+    .bt-beacon {
+      max-width: 70%;
+    }
+    .beacon-phone {
+      top: 30%;
+      left: 5%;
+    }
+  }
+}

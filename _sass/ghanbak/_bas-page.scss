@@ -1,0 +1,17 @@
+.boston-art-song {
+  .bas-header {
+    background-image: url("/assets/bas-header.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .header-img {
+      position: relative;
+      padding: 100px 0;
+    }
+
+    @include media-query($on-palm) {
+      background-size: cover;
+    }
+  }
+}

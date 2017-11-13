@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="boston-art-song">
+
+    {% include header.html %}
+
+    {% assign bas = site.data.boston-art-song %}
+    <div class="bas-header">
+      <div class="wrapper">
+        <div class="row between-xs middle-xs center-xs case-study">
+          <div class="col-xs-12">
+            <h2>
+              {{ bas.title }}
+            </h2>
+            <h4>{{ bas.company }}</h4>
+          </div>
+          <div class="col-xs-12 header-img"></div>
+        </div>
+      </div>
+    </div>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            <p>{{ bas.situation }}</p>
+          </div>
+        </div>
+        <div class="row between-xs bottom-sm case-study">
+          <div class="col-xs-10 col-sm-8 underlay-10">
+            <img src="/assets/bas-concert-large.jpg" />
+          </div>
+          <div class="col-xs-6 col-xs-offset-6 overlay-60">
+            <img src="/assets/bas-concert-small.jpg" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            <p>{{ bas.task }}</p>
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            {% assign paragraphs = site.data.boston-art-song.action %}
+            {% for paragraph in paragraphs limit:1 %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-xs-4">
+            <img src="/assets/bas-concept-1.png" />
+          </div>
+          <div class="col-xs-4">
+            <img src="/assets/bas-concept-2.png" />
+          </div>
+          <div class="col-xs-4">
+            <img src="/assets/bas-concept-3.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            <img src="/assets/bas-concept-final.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            {% assign paragraphs = site.data.boston-art-song.action %}
+            {% for paragraph in paragraphs offset:1 limit:1 %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="row between-xs middle-xs center-xs case-study">
+          <div class="col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+            <img src="/assets/bas-colors-1.png" />
+          </div>
+          <div class="col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+            <img src="/assets/bas-colors-2.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-xs-12">
+            <img src="/assets/bas-colors-final.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            {% assign paragraphs = site.data.boston-art-song.result %}
+            {% for paragraph in paragraphs %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="row between-xs bottom-sm case-study">
+          <div class="col-sm-8 col-xs-12 underlay-60 underlay-no-mobile">
+            <img src="/assets/bas-romance.png" />
+          </div>
+          <div class="col-sm-6 col-sm-offset-6 col-xs-12 overlay-60 underlay-60 overlay-no-mobile underlay-no-mobile">
+            <img src="/assets/bas-poster.png" />
+          </div>
+          <div class="col-sm-8 col-xs-12 underlay-60 overlay-60 overlay-no-mobile">
+            <img src="/assets/bas-bags.png" />
+          </div>
+          <div class="col-sm-6 col-sm-offset-6 col-xs-12 overlay-100">
+            <img src="/assets/home-cards.png" />
+          </div>
+        </div>
+      </div>
+
+      {% include case-study-info.html info = bas %}
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

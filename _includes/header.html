@@ -1,7 +1,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    <div class="row between-xs middle-xs">
+    <div class="row between-xs middle-xs center-xs start-sm">
       {% assign default_paths = site.pages | map: "path" %}
       {% assign page_paths = site.header_pages | default: default_paths %}
 
@@ -13,7 +13,7 @@
       {% if page_paths %}
         <nav class="site-nav col-sm-9 col-xs-12">
 
-          <div class="trigger">
+          <div class="trigger row middle-xs center-xs end-sm">
             <a class="page-link" href="{{ "/" | relative_url }}">Work</a>
             <a class="page-link" href="https://medium.com/design-haikus" target="_blank">Writing</a>
             <a class="page-link" href="{{ "/about" | relative_url }}">About</a>

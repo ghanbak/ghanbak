@@ -29,4 +29,8 @@
       max-height: 70%;
     }
   }
+
+  @include media-query($on-palm) {
+    margin-bottom: $spacing-unit;
+  }
 }
