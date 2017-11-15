@@ -36,8 +36,80 @@
           </div>
         </div>
         <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            {% assign paragraphs = site.data.robin-mobile.action %}
+            {% for paragraph in paragraphs limit:1 %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/people-rough.png" />
+          </div>
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/account-rough.png" />
+          </div>
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/spaces-rough.png" />
+          </div>
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/filters-rough.png" />
+          </div>
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/notifs-rough.png" />
+          </div>
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/composer-rough.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            {% assign paragraphs = site.data.robin-mobile.action %}
+            {% for paragraph in paragraphs offset:1 limit:1 %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/space-detail.png" />
+          </div>
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/search-detail.png" />
+          </div>
+          <div class="col-sm-4 col-xs-12 first-sm">
+            <img src="/assets/space-detail-alt.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+            {% assign paragraphs = site.data.robin-mobile.action %}
+            {% for paragraph in paragraphs offset:2 limit:1 %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
+          <div class="col-sm-3 col-xs-12 first-sm">
+            <img src="/assets/search-filters.png" />
+          </div>
+          <div class="col-sm-3 col-xs-12 first-sm">
+            <img src="/assets/office-home.png" />
+          </div>
+          <div class="col-sm-3 col-xs-12 first-sm">
+            <img src="/assets/search-results.png" />
+          </div>
+          <div class="col-sm-3 col-xs-12 first-sm">
+            <img src="/assets/space-view.png" />
+          </div>
+        </div>
+        <div class="row between-xs middle-xs case-study">
           <div class="col-sm-7 col-xs-12 last-xs first-sm">
-            <p>{{ robinMobile.action }}</p>
+            {% assign paragraphs = site.data.robin-mobile.action %}
+            {% for paragraph in paragraphs offset:3 %}
+              <p>{{ paragraph.paragraph }}</p>
+            {% endfor %}
           </div>
           <div class="col-sm-5 col-xs-12">
             <img src="/assets/mobile-v2-home.png" />
