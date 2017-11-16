@@ -300,3 +300,51 @@ pre {
     padding-top: 5px;
   }
 }
+
+/**
+ * SVG Animation
+ */
+
+svg#logo {
+  display: block;
+  overflow: visible;
+}
+
+#yellow,
+#magenta,
+#cyan {
+  position: relative;
+}
+
+#cyan {
+  animation-name: hover-cyan;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+}
+
+#magenta {
+  animation-name: hover-magenta;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+}
+
+#yellow {
+  animation-name: hover-yellow;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+}
+
+svg#logo:hover {
+
+  #cyan,
+  #magenta,
+  #yellow {
+   animation-play-state: running;
+  }
+}
