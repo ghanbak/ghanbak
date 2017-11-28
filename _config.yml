@@ -22,6 +22,7 @@ url: "https://ghanbak.com" # the base hostname & protocol for your site, e.g. ht
 twitter_username: ghanbak
 instagram_username: ghanbak
 dribbble_username: ghanbak
+google_analytics: UA-27532689-1
 
 # Build settings
 markdown: kramdown
