@@ -110,7 +110,10 @@ li {
  */
 h1,
 h2,
-h3,
+h3 {
+  font-weight: $bold-font-weight;
+}
+
 h4,
 h5,
 h6 {
@@ -147,6 +150,7 @@ h3 {
   line-height: 1.2;
   letter-spacing: 1px;
   margin-bottom: $base-font-size * 1;
+  font-weight: bold;
 
   .dark & {
     color: $light-h3;
@@ -198,6 +202,18 @@ a {
     .username {
       text-decoration: underline;
     }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  a {
+    color: $brand-color !important;
   }
 }
 
